@@ -460,7 +460,7 @@ public class WebSocketImpl implements WebSocket {
         errorCodeDescription = "500 Internal Server Error";
     }
     return ByteBuffer.wrap(Charsetfunctions.asciiBytes("HTTP/1.1 " + errorCodeDescription
-        + "\r\nContent-Type: text/html\r\nServer: TooTallNate Java-WebSocket\r\nContent-Length: "
+        + "\r\nContent-Type: text/html\r\nContent-Length: "
         + (48 + errorCodeDescription.length()) + "\r\n\r\n<html><head></head><body><h1>"
         + errorCodeDescription + "</h1></body></html>"));
   }

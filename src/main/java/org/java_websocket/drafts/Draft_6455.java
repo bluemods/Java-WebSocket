@@ -446,7 +446,7 @@ public class Draft_6455 extends Draft {
       response.put(SEC_WEB_SOCKET_PROTOCOL, getProtocol().getProvidedProtocol());
     }
     response.setHttpStatusMessage("Web Socket Protocol Handshake");
-    response.put("Server", "TooTallNate Java-WebSocket");
+    // response.put("Server", "TooTallNate Java-WebSocket");
     response.put("Date", getServerTime());
     return response;
   }
